@@ -1,15 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { FlatList, StyleSheet, Text, View,Image } from 'react-native';
-import products from './data/products';
-import Productscreen from './screens/Productscreen';
-import Productitemscreen from './screens/Productitemscreen';
-import Shoppingcart from './screens/Shoppingcart';
-import Cartscreen from './screens/Cartscreen';
 
+import { FlatList, StyleSheet, Text, View,Image, useAnimatedValue } from 'react-native';
+import Navigater from './Navigation/Navigater';
 import { NavigationContainer } from '@react-navigation/native';
-import CartListItem from './screens/CartListItem';
-import cart from './data/cart';
+import { productupdate } from './helper/productUpdate';
+import { useState } from 'react';
+import { ModalPortal } from "react-native-modals";
+import { Provider } from "react-redux";
+import store from "./store";
+import { UserContext } from "./UserContext";
 
+<<<<<<< HEAD
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Personinfo from './screens/Personinfo';
 
@@ -43,5 +43,20 @@ const styles = StyleSheet.create({
    
    
   },
+=======
+const App=()=> {
+  
+  return (
+>>>>>>> f524f3bf94e22b789f627fa8cbd87bbe04e8fe27
  
-});
+ <>
+ <Provider store={store}>
+
+   <Navigater/>
+     <ModalPortal />
+   
+ </Provider>
+</>
+  );
+};
+export default App;
