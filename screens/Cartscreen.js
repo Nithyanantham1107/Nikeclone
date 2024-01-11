@@ -16,7 +16,7 @@ const Cartscreen= ({item}) => {
 
 <View style={{ flexDirection:"col",}}>
 <View style={{marginTop:5,}}><Text>{item.product.name}</Text>
-<Text>{item.size}</Text></View>
+<Text> SIZE :{item.size}</Text></View>
 <View style={{ flexDirection:"row", marginTop:75, }}>
 <Feather
             onPress={increaseQuantity}
@@ -37,7 +37,7 @@ const Cartscreen= ({item}) => {
 
 
 
-    </View><Text style={{marginTop:115}}>{item.product.price}</Text></SafeAreaView>
+    </View><Text style={{marginTop:115}}>{item.product.price}/-</Text></SafeAreaView>
   );
 }
 

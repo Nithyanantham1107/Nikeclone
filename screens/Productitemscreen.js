@@ -1,25 +1,40 @@
 import { View, Text,StyleSheet ,Image,FlatList,useWindowDimensions, ScrollView, Pressable, TouchableOpacity} from 'react-native';
-import React from 'react';
+import React, { useState } from 'react';
 import products from '../data/products';
 import { useNavigation } from '@react-navigation/native';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart } from '../redux/CartReducer';
 
 
-const Productitemscreen = () => {
-  
-    const product=products[0];
+const Productitemscreen = ({route}) => {
+  console.log(route.params)
+    const product=route.params;
     const {Width}=useWindowDimensions();
+   
     const navigation=useNavigation();
-  return (
+   const [addedToCart, setAddedToCart] = useState(false);
+   const dispatch = useDispatch();
+   const addItemToCart = (item) => {
+     setAddedToCart(true);
+     dispatch(addToCart(item));
+     setTimeout(() => {
+       setAddedToCart(false);
+     }, 60000);
+     
+   };
+   const cart = useSelector((state) => state.cart.cart);
+   console.log(cart);
+   return (
 
  <View style={{flex:1}} >
     
-      <FlatList data={product.images} renderItem={({item})=>(<>
       
-        <Image  style={styles.img}source={{uri:item,}}
+      
+        <Image  style={styles.img}source={{uri:product.image,}}
         />
 
   
-  </> )} horizontal  showsHorizontalScrollIndicator={false} pagingEnabled={true} />
+ 
   
 <ScrollView style={{marginHorizontal:2}}>
   
@@ -27,12 +42,46 @@ const Productitemscreen = () => {
   <Text style={styles.price}> {product.price} /.</Text>
  <Text style={styles.describe}> {product.description}</Text>
   </ScrollView>
-  <TouchableOpacity style={styles.button} onPress={()=>{
-    navigation.navigate("shop");
+  
 
-  }}>
-    <Text style={{color:'white',fontWeight:'300'}}>Add To cart</Text>
+{addedToCart ? (
+         <TouchableOpacity style={{ backgroundColor:"white",
+         padding:4,
+         margin:10,
+         height:40,
+         alignItems:'center',
+         justifyContent:'center',
+         bottom:10, 
+         width:"80%",
+         alignSelf:'center',
+ 
+         borderRadius:100,}} onPress={()=>
+          addItemToCart(product)
+      
+        }>
+            <Text style={{color:'black',fontWeight:'300'}}>Added to Cart</Text>
+          
   </TouchableOpacity>
+        ) : (<TouchableOpacity style={{ backgroundColor:"black",
+        padding:4,
+        margin:10,
+        height:40,
+        alignItems:'center',
+        justifyContent:'center',
+        bottom:10, 
+        width:"80%",
+        alignSelf:'center',
+
+        borderRadius:100,}} onPress={()=>
+          addItemToCart(product)
+      
+        }>
+          <Text style={{color:'white',fontWeight:'300'}}>Add to Cart</Text>
+           
+  </TouchableOpacity>
+        )}
+   
+ 
  
    
  </View>
@@ -47,10 +96,11 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
     },
     img:{
-       width:300,
+       width:400,
         aspectRatio:1,
-        marginHorizontal:2,
-        borderRadius:4
+        marginHorizontal:4,
+        borderRadius:6,
+        
     },
     button:{
         backgroundColor:"black",
@@ -66,8 +116,8 @@ const styles = StyleSheet.create({
         borderRadius:100,
      
     },title:{
-        fontSize:30,
-    fontWeight:'300',
+        fontSize:40,
+    fontWeight:'500',
     
     },price:{fontSize:40,
         letterSpacing:0.5,

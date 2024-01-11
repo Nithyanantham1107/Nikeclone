@@ -1,32 +1,23 @@
 export default [
   {
     id: "1",
-    image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike1.png",
+    image: "https://nayturr.com/wp-content/uploads/2020/06/atlantic-cod-june232020-min-1024x683.jpg.webp",
     images: [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike1.png",
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike1_1.png",
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike1_2.png",
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike1_3.png",
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike1_4.png",
+      "https://tse2.mm.bing.net/th?id=OIP.9JHsjhFIueXgyfRqGfjNgAHaE6&pid=Api&P=0&h=220",
+      "https://tse1.mm.bing.net/th?id=OIP.CxEzgRab561SVuIneiEkUwHaD6&pid=Api&P=0&h=220",
+      "https://tse2.mm.bing.net/th?id=OIP.MGbyII8dVgRVX6ibXytAswHaE8&pid=Api&P=0&h=220",
+      "https://tse4.mm.bing.net/th?id=OIP.8JIEnhkSW89RXke5LPiHXQHaD1&pid=Api&P=0&h=220",
+      "https://tse2.mm.bing.net/th?id=OIP.fWZQpEAVEcOEfqjioUeIcgHaEK&pid=Api&P=0&h=220",
     ],
-    name: "Wild Berry",
+    name: "Atlantic Cod",
     price: 160,
     sizes: [39, 40, 41],
-    description: `Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.
-
-Advantages:
-- Encapsulated Air-Sole unit for lightweight cushioning.
-- Genuine leather on the upper for durability and a premium look.
-- Solid rubber outsole for greater traction on different types of surfaces.
-- Color Shown: Palomino/White/Wild Berry
-- Model: 553558-215
-- Proven efficacy
-
-A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air cushioning for all-day comfort. The rubber outsole offers durable traction on a variety of surfaces.`,
+    description: `The Atlantic Cod is part of the Gadidae family and is primarly hunted for food by humans. It is labeled as vulnerable by the ICUN due to over-fishing for human consumption. It can live up to 25 years and comes in green or brown colors with spots on the dorsal side.
+    It lives in habitats from the main continental shelf to the shoreline, which is why it is easier to catch in all sorts of waters. They usually have a length of 61 cm to 1.2 m and weigh up to 40 kg.`,
   },
   {
     id: "2",
-    image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike2.png",
+    image: "https://nayturr.com/wp-content/uploads/2020/06/mackerel-june232020-min.jpg.webp",
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike2.png",
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike2_1.png",
@@ -51,7 +42,7 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   },
   {
     id: "3",
-    image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike3.png",
+    image: "https://nayturr.com/wp-content/uploads/2020/06/trout-june232020-min.jpg.webp",
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike3.png",
     ],
@@ -72,7 +63,7 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   },
   {
     id: "4",
-    image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike4.png",
+    image: "https://nayturr.com/wp-content/uploads/2020/06/atlantic-salmon-june232020-min.jpg.webp",
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike4.png",
     ],
@@ -93,7 +84,7 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   },
   {
     id: "5",
-    image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike5.png",
+    image: "https://nayturr.com/wp-content/uploads/2020/06/tuna-june232020-min-1024x683.jpg.webp",
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike5.png",
     ],
@@ -114,7 +105,7 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   },
   {
     id: "6",
-    image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike6.png",
+    image: "https://nayturr.com/wp-content/uploads/2020/06/shark-june232020-min-1024x683.jpg.webp",
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike6.png",
     ],
@@ -135,7 +126,7 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   },
   {
     id: "7",
-    image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike7.png",
+    image: "https://nayturr.com/wp-content/uploads/2020/06/red-mullet-june232020-min-e1592894856585.jpg.webp",
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike7.png",
     ],
@@ -156,7 +147,7 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   },
   {
     id: "8",
-    image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike8.png",
+    image: "https://nayturr.com/wp-content/uploads/2020/06/barramundi-june232020-min-1024x680.jpg.webp",
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike8.png",
     ],
@@ -177,7 +168,7 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   },
   {
     id: "9",
-    image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike9.png",
+    image: "https://nayturr.com/wp-content/uploads/2020/06/mahi-mahi-june232020-min-1024x663.jpg.webp",
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike9.png",
     ],
@@ -199,7 +190,7 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   {
     id: "10",
     image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike10.png",
+      "https://nayturr.com/wp-content/uploads/2020/06/anchovy-june232020-min.jpg.webp",
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike10.png",
     ],
@@ -221,7 +212,7 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   {
     id: "11",
     image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike11.png",
+      "https://nayturr.com/wp-content/uploads/2020/06/haddock-june232020-min.jpg.webp",
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike11.png",
     ],
@@ -243,7 +234,7 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   {
     id: "12",
     image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike12.png",
+      "https://nayturr.com/wp-content/uploads/2020/06/red-seabream-fish-june232020-min-e1592895375363.jpg.webp",
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike12.png",
     ],
@@ -265,7 +256,7 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   {
     id: "13",
     image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike13.png",
+      "https://nayturr.com/wp-content/uploads/2020/06/gold-line-fish-june232020-min.jpg.webp",
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike13.png",
     ],
@@ -287,7 +278,7 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   {
     id: "14",
     image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike14.png",
+      "https://nayturr.com/wp-content/uploads/2020/06/pollack-june232020-min.jpg.webp",
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike14.png",
     ],
@@ -309,7 +300,7 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   {
     id: "15",
     image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike15.png",
+      "https://nayturr.com/wp-content/uploads/2020/06/ocean-sunfish-june232020-min-1024x683.jpg.webp",
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike15.png",
     ],
@@ -331,7 +322,7 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   {
     id: "16",
     image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike16.png",
+      "https://nayturr.com/wp-content/uploads/2020/06/northern-red-snapper-june232020-min.jpg.webp",
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike16.png",
     ],

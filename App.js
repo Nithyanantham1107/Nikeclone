@@ -1,45 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { FlatList, StyleSheet, Text, View,Image } from 'react-native';
-import products from './data/products';
-import Productscreen from './screens/Productscreen';
-import Productitemscreen from './screens/Productitemscreen';
-import Shoppingcart from './screens/Shoppingcart';
-import Cartscreen from './screens/Cartscreen';
 
+import { FlatList, StyleSheet, Text, View,Image, useAnimatedValue } from 'react-native';
+import Navigater from './Navigation/Navigater';
 import { NavigationContainer } from '@react-navigation/native';
-import CartListItem from './screens/CartListItem';
-import cart from './data/cart';
+import { productupdate } from './helper/productUpdate';
+import { useState } from 'react';
+import { ModalPortal } from "react-native-modals";
+import { Provider } from "react-redux";
+import store from "./store";
+import { UserContext } from "./UserContext";
 
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-export default function App() {
-  const Stack=createNativeStackNavigator();
+const App=()=> {
+  
   return (
-   
-<View style={styles.container}>
-
-<NavigationContainer>
- <Stack.Navigator screenOptions={{headerShown:false}}>
-
- <Stack.Screen name="home" component={Productscreen}/>
-  <Stack.Screen name="item" component={Productitemscreen}/>
-  <Stack.Screen name="shop" component={Shoppingcart}/>
- </Stack.Navigator>
-       </NavigationContainer>
-{/*<Productitemscreen/>
-<Productscreen/>
-<Shoppingcart/>*/}
-    </View>
-
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-   flex:1,
-   marginHorizontal:10
-   
-   
-  },
  
-});
+ <>
+ <Provider store={store}>
+
+   <Navigater/>
+     <ModalPortal />
+   
+ </Provider>
+</>
+  );
+};
+export default App;
