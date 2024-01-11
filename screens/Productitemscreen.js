@@ -49,8 +49,8 @@ const styles = StyleSheet.create({
     img:{
        width:300,
         aspectRatio:1,
-        marginHorizontal:2,
-        borderRadius:4
+        marginHorizontal:4,
+        borderRadius:6
     },
     button:{
         backgroundColor:"black",

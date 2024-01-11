@@ -3,8 +3,8 @@ export default [
     product: {
       id: "1",
       image:
-        "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike1.png",
-      name: "Wild Berry",
+        "https://nayturr.com/wp-content/uploads/2020/06/atlantic-cod-june232020-min-1024x683.jpg.webp",
+      name: "Atlantic Cod",
       price: 160,
     },
     size: 42,
@@ -14,8 +14,8 @@ export default [
     product: {
       id: "2",
       image:
-        "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike2.png",
-      name: "Air Force 1",
+        "https://nayturr.com/wp-content/uploads/2020/06/mackerel-june232020-min.jpg.webp",
+      name: "Mackerel",
       price: 169,
     },
     size: 43,
@@ -25,8 +25,8 @@ export default [
     product: {
       id: "3",
       image:
-        "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike3.png",
-      name: "Nike Cosmic",
+        "https://nayturr.com/wp-content/uploads/2020/06/trout-june232020-min.jpg.webp",
+      name: "Trout",
       price: 129,
     },
     size: 44,

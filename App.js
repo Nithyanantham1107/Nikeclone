@@ -11,6 +11,7 @@ import CartListItem from './screens/CartListItem';
 import cart from './data/cart';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Personinfo from './screens/Personinfo';
 
 export default function App() {
   const Stack=createNativeStackNavigator();
@@ -19,11 +20,12 @@ export default function App() {
 <View style={styles.container}>
 
 <NavigationContainer>
- <Stack.Navigator screenOptions={{headerShown:false}}>
+ <Stack.Navigator initialRouteName='home' screenOptions={{headerShown:false }}>
 
  <Stack.Screen name="home" component={Productscreen}/>
   <Stack.Screen name="item" component={Productitemscreen}/>
   <Stack.Screen name="shop" component={Shoppingcart}/>
+  <Stack.Screen name="info" component={Personinfo}/>
  </Stack.Navigator>
        </NavigationContainer>
 {/*<Productitemscreen/>

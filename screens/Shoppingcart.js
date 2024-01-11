@@ -3,11 +3,19 @@ import React from 'react'
 import Cartscreen from './Cartscreen';
 import cart from '../data/cart';
 import CartListItem from './CartListItem';
+import { Ionicons } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 
 const Shoppingcart = () => {
+  
+  const navigation=useNavigation();
   return (
+
     <View style={styles.container}>
+       <TouchableOpacity
+ onPress={()=>{navigation.navigate("home")}}
+ ><Ionicons name="arrow-back" size={30} style={{marginRight:350,marginTop:20,alignSelf:"flex-start"}} color="black" /></TouchableOpacity>
      <FlatList data={cart} renderItem={ ({item})=>(
       <Cartscreen item={item}/>
   )}
